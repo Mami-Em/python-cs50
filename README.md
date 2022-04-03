@@ -1,3 +1,3 @@
 # Lab-6
 
-run with python3
+Run with python3 only
