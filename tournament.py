@@ -40,8 +40,8 @@ def main():
     print(counts)
     
     # Print each team's chances of winning, according to simulation
-    for a,b in counts.items():
-        print(a,b)
+    for team in sorted(counts, key=lambda team: counts[team], reverse=True):
+        print(f"{team}: {counts[team] * 100 / N:.1f}% chance of winning")
 
 
 def simulate_game(team1, team2):
